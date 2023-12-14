@@ -27,15 +27,15 @@ private String observacao;
                 } catch (ParseException ex) {
         Logger.getLogger(Agendamento.class.getName()).log(Level.SEVERE, null, ex);
     }
-    
-    }
-//Getter e Setter
+
 
     public Agendamento(int id, Cliente cliente, Servico servico, float valor, String data,String observacao) {
        this(id,cliente,servico,valor,data);//faz referencia ao construtor de cima
        this.observacao = observacao;
     }
 
+//Getter e Setter
+        
     public int getId() {
         return id;
     }
